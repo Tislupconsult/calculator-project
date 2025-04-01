@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Objective: "The objective of this project is to design and develop a simple, user-friendly calculator application using HTML, CSS, and JavaScript. The calculator will allow users to perform basic arithmetic operations, including addition, subtraction, multiplication, and division, as well as handle percentage calculations and deletions." -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input type="text" id="display" disabled>
+                </div>
+                <div class="btn">
+                    <input type="button" value="AC" class="ac" onclick="clearAllDisplay()">
+                    <input type="button" value="%" onclick="valueToDisplay('%')">
+                    <input type="button" value="DEL" class="del" onclick="deleteValueDisplay()">
+                    <input type="button" value="/" onclick="valueToDisplay('/')">
+                </div>
+                <div class="btn">
+                    <input type="button" value="7" onclick="valueToDisplay('7')">
+                    <input type="button" value="8" onclick="valueToDisplay('8')">
+                    <input type="button" value="9" onclick="valueToDisplay('9')">
+                    <input type="button" value="*" onclick="valueToDisplay('*')">
+                </div>
+                <div class="btn">
+                    <input type="button" value="4" onclick="valueToDisplay('4')">
+                    <input type="button" value="5" onclick="valueToDisplay('5')">
+                    <input type="button" value="6" onclick="valueToDisplay('6')">
+                    <input type="button" value="-" onclick="valueToDisplay('-')">
+                </div>
+                <div class="btn">
+                    <input type="button" value="1" onclick="valueToDisplay('1')">
+                    <input type="button" value="2" onclick="valueToDisplay('2')">
+                    <input type="button" value="3" onclick="valueToDisplay('3')">
+                    <input type="button" value="+" onclick="valueToDisplay('+')">
+                </div>
+                <div class="btn">
+                    <input type="button" value="00" onclick="valueToDisplay('00')">
+                    <input type="button" value="0" onclick="valueToDisplay('0')">
+                    <input type="button" value="." onclick="valueToDisplay('.')">
+                    <input type="button" value="=" class="equal" onclick="calculate()">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
